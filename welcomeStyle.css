@@ -1,0 +1,153 @@
+body{
+    margin:0;
+    padding:0;
+    border: 0;
+}
+.wrapper {
+    min-height: 100vh;
+    font-weight: 300;
+    color: #fff;
+    position: relative;
+}
+section {
+    height: 100vh;
+    font-size: 40px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Kanit', sans-serif;
+}
+.box{
+    height: fit-content;
+    width: fit-content;
+    font-size: 4rem;
+    font-family: inherit;
+
+}
+.logout-img{
+    height: 50px;
+    width: 50px;
+}
+.lo_button
+{
+    font-size: 4rem;
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+}
+.logout_box{
+    height: fit-content;
+    width: fit-content;
+}
+section:nth-child(1) {
+    background: white;
+}
+section:nth-child(2) {
+    background:#40513B;
+}
+section:nth-child(3) {
+    background: #609966;
+}
+section:nth-child(4) {
+    background:#AA5656;
+}
+section:nth-child(5) {
+    background: #2E4F4F;
+}
+section:nth-child(6) {
+    background: #408E91;
+}
+section:nth-child(7) {
+    background: #675D50;
+}
+
+.nav__wrapper {
+    position: fixed;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+.nav {
+    margin: 0 0 100px 30px;
+}
+.nav__counter {
+    font-size: 24px;
+    transition: all 0.15s ease-out;
+    font-family: inherit;
+}
+.nav__title {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0 0 0.25em;
+    width: 300px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.3s ease-out, opacity 0.2s ease-out;
+    font-family: inherit;
+}
+.nav__body {
+    font-weight: 100;
+    font-size: 18px;
+    font-size: 18px;
+    width: 300px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.3s ease-out, opacity 0.2s ease-out;
+    font-family: inherit;
+}
+.nav li {
+    position: relative;
+    transition: all 0.3s ease-out;
+    margin-bottom: 1em;
+}
+.nav li:after {
+    content: '';
+    display: block;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    height: 250px;
+    width: 20px;
+    position: absolute;
+    left: -30px;
+    top: 15px;
+}
+.nav li a {
+    display: block;
+    padding: 0;
+    color: #fff;
+    transition: all 0.15s ease-out;
+}
+.nav li a:hover {
+    background-color: transparent;
+    padding-left: 1em;
+}
+.nav li a:focus {
+    background-color: transparent;
+}
+.nav li.active {
+    pointer-events: none;
+    padding-left: 1em;
+}
+.nav li.active:after {
+    width: 35px;
+    height: 400px;
+    top: 35px;
+}
+.nav li.active .nav__counter {
+    font-size: 48px;
+}
+.nav li.active .nav__title {
+    height: 40px;
+    opacity: 1;
+    overflow: visible;
+}
+.nav li.active .nav__body {
+    height: 100px;
+    opacity: 1;
+    overflow: visible;
+}
